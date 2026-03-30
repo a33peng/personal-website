@@ -2,7 +2,8 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  /* content on top of background: text, icons, boarder */
+  --foreground: #000000; 
 }
 
 @theme inline {
@@ -10,12 +11,14 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --font-raleway: var(--font-raleway);
+  --font-lora: var(--font-loar);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #ffffff;
+    --foreground: #000000;
   }
 }
 
@@ -23,4 +26,16 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 { 
+  margin-top: 1rem;
+  margin-bottom: 1rem; 
+  color: #f7cee0;
+}
+
+.centered-container { 
+  max-width: 1600px;      /* limit content width */
+  margin: 0 auto;         /* center horizontally */
+  padding: 0 50px;        /* left + right padding */
 }
