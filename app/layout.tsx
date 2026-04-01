@@ -17,6 +17,9 @@ const raleway = Raleway({
 export const metadata: Metadata = {
   title: "Ashley",
   description: "Portfolio",
+  icons: {
+    icon: '/petal.png', 
+  },
 };
 
 export default function RootLayout({
