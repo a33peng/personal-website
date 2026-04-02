@@ -1,6 +1,10 @@
 import React, {CSSProperties} from 'react'; 
+import { usePathname } from 'next/navigation';
+import Link from 'next/link'; 
 
 export default function NavBar() { 
+    const pathName = usePathname() 
+
     const NavText = ({rotation = 0, timing = 300, children} : { 
         rotation?: number; 
         timing?: number; 
@@ -43,10 +47,12 @@ export default function NavBar() {
 
     return ( 
         <div className="font-raleway font-semibold text-xl ml-100"> 
-            <NavText rotation={2}> About </NavText> 
-            <a href="mailto:a33peng@uwaterloo.ca"> 
+            <Link className={`link ${pathName === '/about' ? 'active' : ''}`} href="/about">
+                <NavText rotation={2}> About </NavText> 
+            </Link> 
+            <Link href="mailto:a33peng@uwaterloo.ca"> 
                 <NavText rotation={-2}> Contact </NavText>
-            </a>  
+            </Link>  
         </div> 
     ); 
 }
