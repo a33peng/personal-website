@@ -46,13 +46,13 @@ export default function NavBar() {
 
 
     return ( 
-        <div className="font-raleway font-semibold text-xl ml-100"> 
+            <nav className="font-raleway font-semibold text-xl flex flex-col gap-1 ml-100">
             <Link className={`link ${pathName === '/about' ? 'active' : ''}`} href="/about">
                 <NavText rotation={2}> About </NavText> 
             </Link> 
             <Link href="mailto:a33peng@uwaterloo.ca"> 
                 <NavText rotation={-2}> Contact </NavText>
             </Link>  
-        </div> 
+        </nav> 
     ); 
 }
