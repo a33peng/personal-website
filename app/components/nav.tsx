@@ -46,7 +46,7 @@ export default function NavBar() {
 
 
     return ( 
-            <nav className="font-raleway font-semibold text-xl flex flex-col gap-1 ml-100">
+            <nav className="font-raleway font-semibold text-xl flex flex-col gap-1 items-end">
             <Link className={`link ${pathName === '/about' ? 'active' : ''}`} href="/about">
                 <NavText rotation={2}> About </NavText> 
             </Link> 
