@@ -10,7 +10,6 @@
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-raleway: var(--font-raleway);
-  --font-lora: var(--font-loar);
 }
 
 @media (prefers-color-scheme: dark) {

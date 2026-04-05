@@ -1,12 +1,6 @@
 import type { Metadata } from "next";
-import { Raleway, Lora } from "next/font/google";
+import { Raleway } from "next/font/google";
 import "./globals.css";
-
-const lora = Lora({
-  variable: "--font-lora",
-  subsets: ["latin"],
-  weight: ["400", "600", "700"],
-});
 
 const raleway = Raleway({ 
   subsets: ["latin"],
@@ -32,7 +26,6 @@ export default function RootLayout({
       <body
         className={`
           ${raleway.variable}
-          ${lora.variable}
           antialiased
         `}
       >
