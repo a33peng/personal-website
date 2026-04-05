@@ -56,7 +56,7 @@ export default function JobExperince() {
                             className="w-full p-5 text-left hover:bg-pink-100 transition-colors"
                         > 
                             {/* title and date */}
-                            <div className="flex justify-between items-center mb-2">
+                            <div className="flex justify-between items-center">
                                 <h2 className="font-raleway font-bold text-xl">
                                     {job.role}  
                                 </h2> 
