@@ -2,6 +2,8 @@
 
 import NavBar from "../components/nav";
 import JobExperince from "../components/accordion";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
 
 export default function About() {
   return(
@@ -12,7 +14,10 @@ export default function About() {
                 <NavBar /> 
             </div>
             
-            <h1 className="font-raleway font-bold text-2xl"> Ashley Peng </h1>
+            <div className="flex flex-horizontal"> 
+              <span> </span>
+              <h1 className="font-raleway font-bold text-2xl"> Ashley Peng </h1> 
+            </div>
             <div className="w-1/5 h-1 mb-8 bg-pink-100" /> 
             <p className="font-raleway text-lg"> 
               Hi, I'm currently a Computer Engineering student at the University of Waterloo. I'm passionate about coding, building and exploring new things!</p>
@@ -23,7 +28,21 @@ export default function About() {
 
             <br /> 
             <h1 className="font-raleway font-bold text-2xl"> Experince </h1> 
-            <JobExperince /> 
+            <JobExperince />
+      
+            <div className="flex justify-center gap-15 text-2xl m-10">
+              <a href="https://github.com/a33peng" target="_blank" rel="noopener noreferrer">
+                <FaGithub />
+              </a>
+
+              <a href="https://www.linkedin.com/in/ashley-peng-274114244/" target="_blank" rel="noopener noreferrer">
+                <FaLinkedin />
+              </a>
+
+              <a href="mailto:a33peng@uwaterloo.com">
+                <MdEmail />
+              </a>
+            </div>
         </div>
       </div>
     </> 
