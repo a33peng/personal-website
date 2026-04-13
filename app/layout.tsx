@@ -6,7 +6,7 @@ const raleway = Raleway({
   subsets: ["latin"],
   variable: "--font-raleway",
   weight: ["300", "400", "700"],
-})
+});
 
 export const metadata: Metadata = {
   title: "Ashley",
@@ -23,12 +23,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`
-          ${raleway.variable}
-          antialiased
-        `}
-      >
+      <body className={`${raleway.variable}`} > 
         {children}
       </body>
     </html>

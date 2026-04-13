@@ -25,15 +25,19 @@ export default function About() {
 
             <div className="w-1/5 h-1 mb-8 ml-6 bg-pink-100" /> 
 
-            <p className="font-raleway text-lg"> 
+            <p className={"font-raleway text-lg"}> 
               Hi, I'm currently a Computer Engineering student at the University of Waterloo. I'm passionate about coding, building and exploring new things!</p>
             <br /> 
-            <p className="font-raleway text-lg">
+            <p className={"font-raleway text-lg"}>
                In my free time you'll catch me exploring cafes, baking, listening to music and exploring cities.
+            </p>
+            <br />
+            <p className={"font-raleway text-lg"}>
+              I’m always looking for new opportunities and happy to connect — feel free to reach out!
             </p>
 
             <br /> 
-            <h1 className="font-raleway font-bold text-2xl"> Experince </h1> 
+            <h1 className="font-raleway font-bold text-2xl"> Experience </h1> 
             <JobExperince />
       
             <div className="flex justify-center gap-15 text-2xl m-10">
