@@ -9,20 +9,31 @@ export default function JobExperince() {
     }; 
 
     const internships = [
-        { 
+        {
             role: "Software Engineer",
             company: "Faire",
             date: "January - April 2026",
             info: [
-                "incoming w26"    
+                <>
+                    Empowering brands and local retailers through a{" "}
+                    <a
+                        href="https://www.faire.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-pink-300 hover:underline"
+                        onClick={(e) => e.stopPropagation()}
+                    >
+                        global marketplace
+                    </a>
+                </>
             ]
-        }, 
+        },
         { 
             role: "Full Stack Developer",
             company: "Midtown Drywall technologies",
             date: "June - August 2025",
             info: [
-                "Built a full-stack e-commerce application using React Native, Node.js, and PostgreSQL, supporting 100+ daily users and 600+ monthly transactions. Implemented secure authentication while integrating RESTful APIs, and designed PostgreSQL schemas to ensure reliable data management and strong system performance."    
+                "Developed a full-stack e-commerce platform serving 100+ daily users and 600+ monthly transactions, featuring secure authentication, RESTful APIs, and a scalable PostgreSQL backend."    
             ]
         }, 
         { 
@@ -30,7 +41,7 @@ export default function JobExperince() {
             company: "Electrium",
             date: "April - August 2025",
             info: [
-                "Built an interactive EV charging map integrating dynamic geospatial data with heatmap visualization, while developing responsive, modular UI components using TailwindCSS and translating Figma designs into production-ready interfaces."
+                "Built an interactive EV charging map with Mapbox GL JS and Next.js, integrating geospatial heatmaps and modular TailwindCSS components from Figma designs."
             ]
         },
         { 
@@ -38,7 +49,7 @@ export default function JobExperince() {
             company: "Ontario Ministry of Transporation",
             date: "January - April 2024",
             info: [
-                "Developed a Java application utilizing Apache Tomcat and Apache Maven, automating WebFOCUS SQL reports into a streamlined Java solution, enhancing data management and report generation efficiency. Standardized transportation systems analytics reports for internal stakeholders using HTML and CSS, ensuring consistent formatting and readability"
+                "Automated WebFOCUS SQL reports into a Java solution with Apache Tomcat/Maven, standardizing stakeholder reports deployed via Azure DevOps CI/CD pipelines."
             ]
         },
     ]
