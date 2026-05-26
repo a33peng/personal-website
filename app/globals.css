@@ -2,7 +2,6 @@
 
 :root {
   --background: #ffffff;
-  /* content on top of background: text, icons, boarder */
   --foreground: #000000; 
 }
 
@@ -24,7 +23,7 @@ h1 {
 }
 
 .centered-container { 
-  max-width: 1600px;      /* limit content width */
-  margin: 0 auto;         /* center horizontally */
-  padding: 0 50px;        /* left + right padding */
+  max-width: 1600px;     
+  margin: 0 auto;         
+  padding: 0 50px;        
 }
